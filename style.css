@@ -17,28 +17,28 @@
     background: #00aeef;
 }
            [data-role=page]{height: 100% !important; position:relative !important;}
-[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;} 
-           
-           .ui-icon-trendingIcon
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}
+
+/*     .ui-icon-trendingIcon
 {
-    background: url('images/trending.png') no-repeat rgba(0, 0, 0, 0.4) 2% !important;
-    background-size:4px 4px;
+background: url('images/trending.png') no-repeat rgba(0, 0, 0, 0.4) 2% !important;
+background-size:4px 4px;
 }
-                      .ui-icon-homeIcon
+                .ui-icon-homeIcon
 {
-    background: url('images/trending.png') no-repeat rgba(0, 0, 0, 0.4) 2% !important;
-    background-size:4px 4px;
+background: url('images/trending.png') no-repeat rgba(0, 0, 0, 0.4) 2% !important;
+background-size:4px 4px;
 }
-                      .ui-icon-mapIcon
+                .ui-icon-mapIcon
 {
-    background: url('images/trending.png') no-repeat rgba(0, 0, 0, 0.4) 2% !important;
-    background-size:4px 4px;
+background: url('images/trending.png') no-repeat rgba(0, 0, 0, 0.4) 2% !important;
+background-size:4px 4px;
 }
-                      .ui-icon-eventsIcon
+                .ui-icon-eventsIcon
 {
-    background: url('images/trending.png') no-repeat rgba(0, 0, 0, 0.4) 2% !important;
-    background-size:4px 4px;
-}
+background: url('images/trending.png') no-repeat rgba(0, 0, 0, 0.4) 2% !important;
+background-size:4px 4px;
+}*/
            div#list {
   overflow: scroll;
   width: 100%;
@@ -116,6 +116,10 @@ div.element {
     content: none !important;
 }
 
+.ui-btn-icon-bottom:after{
+    display: none !important;
+}
+
 
 /*Custom style begins*/
 
@@ -154,11 +158,17 @@ div.element {
 }
 
 .book_bingo_header_top h1{
-    width: 60%;
+    width: 69%;
     float: left;
-    margin: 10px 0;
+    margin: 18px 0;
     text-align: center;
     font-size: 20px;
+}
+
+.book_bingo_header_top h1 img{
+    width: 20px;
+    margin: -3px;
+    padding: 0 8px;
 }
 
 .book_bingo_search{
@@ -191,7 +201,7 @@ div.element {
 }
 
 .ui-icon-delete:after {
-    background-image: url(images/mic.png);
+    background-image: url(images/mic.png) !important;
     background-color: #fff;
 }
 
@@ -202,7 +212,7 @@ div.element {
 /*Trending page Styles*/
 
 .trending_body{
-    top: 126px;
+    top: 143px;
     position: absolute;
     width: 100%;
     margin: 0;
@@ -256,9 +266,51 @@ div.element {
 .favClass{
     width: 17%;
     float: left;
+    margin: 8px 0;
 }
 
 .favClass img{
     width: 30px;
     float: right;
+}
+
+.mob-menu{
+    width: 10%;
+    float: left;
+    padding: 10px;
+}
+
+.mob-menu img{
+    width: 100%;
+}
+
+.mob-setting{
+    width: 10%;
+    padding: 10px;
+    float: left;
+}
+
+.mob-setting img{
+    float: right;
+    width: 100%;
+}
+
+.bottom_menu_item{
+    background-color: #00aeef !important;
+    padding-bottom: 0 !important;
+}
+
+.bottom_menu_item img{
+    width: 25px;
+}
+
+.bottom_menu_item p{
+    font-size: 10px;
+    text-shadow: none;
+    margin: 2px 0 5px;
+    color: #7af0c4;
+}
+
+.menu_current p{
+    color: #fff !important;
 }

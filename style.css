@@ -216,3 +216,49 @@ div.element {
     border-left: none;
     border-right: none;
 }
+
+.trending_list ul li .trending_list_img img{
+    width: 50px !important;
+    height: 50px;
+    border-radius: 50% !important;
+    float: left;
+    margin: 3px 0;
+}
+
+.ui-listview>.ui-li-has-thumb>.ui-btn{
+    padding-left: 5.25em !important;
+}
+
+.trending_list_desc{
+    width: 50%;
+    float: left;
+    margin-left: 2%;
+}
+
+.ui-btn-icon-right{
+    padding-right: 1em !important;
+}
+
+.ui-listview-inset>li>a.ui-btn {
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+.trending_place{
+    width: 15%;
+    float: left;
+}
+
+.trending_place img{
+    width: 45px;
+}
+
+.favClass{
+    width: 17%;
+    float: left;
+}
+
+.favClass img{
+    width: 30px;
+    float: right;
+}

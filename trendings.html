@@ -14,6 +14,29 @@
       
    <body>
       <div data-role = "page" id = "pageone">
+	  
+	  <script type="text/javascript">
+        //item 1
+     // $(document).bind("pageinit", function(){
+     //   $("#test ui li").click(function(){
+     //     var argValue = $("#item1").val();
+     //     var id = $(this).attr("id"); // Get the ID
+     //     alert($(this).attr("id"));
+     //     $.mobile.changePage("bookDetailVC.html",{data:{arg1:id}});
+     //     //or you could pass parameters in the URL
+     //     //$.mobile.changePage("page2.html?arg1=Ram");
+     //   });
+     // });
+
+     $(document).on("click", "#test li" ,function (event) {
+       var id = $(this).attr("id"); // Get the ID
+    alert($(this).text());
+    alert(id);
+    $.mobile.changePage("bookDetailVC.html",{data:{arg1:id}});
+});
+
+   </script>
+	  
          <div class="book_bingo_hdr" data-role = "header" data-theme="b">
              <div class="book_bingo_header_top">
                     <div class="mob-menu">
@@ -38,8 +61,8 @@
             
              <div class="listCont trending_list">
           
-                <ul data-role="listview" data-inset="true">
-                    <li><a href="#">
+                <ul data-role="listview" data-inset="true" id = "test">
+                    <li id="item1"><a href="#">
 
                         <div class="trending_list_img">
                             <img src="images/harrypotter.jpg">
@@ -59,7 +82,7 @@
                         </div>
                         
                     </a></li>
-                    <li><a href="#">
+                    <li id="item2"><a href="#">
 
                         <div class="trending_list_img">
                             <img src="images/harrypotter.jpg">
@@ -79,7 +102,7 @@
                         </div>
 
                     </a></li>
-                    <li><a href="#">
+                    <li id="item3"><a href="#">
 
                         <div class="trending_list_img">
                             <img src="images/harrypotter.jpg">
@@ -101,7 +124,7 @@
                         </div>
 
                     </a></li>
-                    <li><a href="#">
+                    <li id="item4"><a href="#">
 
                         <div class="trending_list_img">
                             <img src="images/harrypotter.jpg">
@@ -119,7 +142,7 @@
                         </div>
 
                     </a></li>
-                    <li><a href="#">
+                    <li id="item5"><a href="#">
 
                         <div class="trending_list_img">
                             <img src="images/harrypotter.jpg">
@@ -137,7 +160,7 @@
                         </div>
 
                     </a></li>
-                    <li><a href="#">
+                    <li id="item6"><a href="#">
 
                         <div class="trending_list_img">
                             <img src="images/harrypotter.jpg">
@@ -155,7 +178,7 @@
                         </div>
 
                     </a></li>
-                    <li><a href="#">
+                    <li id="item7"><a href="#">
 
                         <div class="trending_list_img">
                             <img src="images/harrypotter.jpg">

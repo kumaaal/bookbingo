@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       <script src="jquery-1.7.2.js"></script>
+<script src="jquery.mobile-1.1.0.js"></script>
+<script src="jquery.url.js"></script>
+       <link rel = "stylesheet" href = "style.css">
+
+
+
+
+   </head>
+
+
+
+   <body>
+
+
+      <div data-role = "page" id = "bookDetailVC">
+
+        <script>
+        var item;
+        $("#bookDetailVC").bind("pageshow", function(event){
+          item = $("#bookDetailVC" ).attr("data-url");
+                alert(getPamarByName(url,'arg1'));
+                alert(item);
+        });
+
+        function getPamarByName(url, paramName){
+        	var strGET = url.substr(url.indexOf('?')+1,url.length - url.indexOf('?'));
+        	var arrGET = strGET.split("&");
+        	var paramValue = '';
+        	for(i=0;i<arrGET.length;i++){
+        	      var aux = arrGET[i].split("=");
+        	      if (aux[0] == paramName){
+        	            paramValue = aux[1];
+        	      }
+        	}
+        	return paramValue;
+        }
+
+
+        $('.thumbnail').hover(
+                function(){
+                    $(this).find('.caption').slideDown(250); //.fadeIn(250)
+                },
+                function(){
+                    $(this).find('.caption').slideUp(250); //.fadeOut(205)
+                }
+            );
+
+
+
+            //   var dataArr = {
+            // item1 : [{
+            //             title : "Harry Potter",
+            //             description : "Harry finds this chick outta nowhere on his quest to find a wife.",
+            //             img : ""
+            //         }],
+            // item2 : [{
+            //             title : "Twilight",
+            //             description : "",
+            //             img : ""
+            // }],
+            // item3 : [{
+            //             title : "Lord of the rings",
+            //             description : "",
+            //             img : ""
+            // }],
+            // item4 : [{
+            //             title : "Jane Eyre",
+            //             description : "",
+            //             img : ""
+            // }],
+            // item5 : [{
+            //             title : "Peater Pan",
+            //             description : "",
+            //             img : ""
+            // }],
+            // item6 : [{
+            //             title : "Testing 2",
+            //             description : "",
+            //             img : ""
+            // }],
+            // item7 : [{
+            //             title : "Testing 3",
+            //             description : "",
+            //             img : ""
+            // }]
+
+
+var itemSet = {
+  "items" : [
+    {
+    "id" : "item1",
+    "title" : "Harry harrypotter",
+    description : "fdsfsd",
+    img : "fd",
+    rating : "fdsg"
+  },
+  {
+  "id" : "item2",
+  "title" : "Harry harrypotter",
+  description : "fdsfsd",
+  img : "fd",
+  rating : "fdsg"
+},
+{
+"id" : "item3",
+"title" : "Harry harrypotter",
+description : "fdsfsd",
+img : "fd",
+rating : "fdsg"
+}
+  ]
+};
+
+      console.log(itemSet);
+
+            // $("#pageone").load('pageinit', function() {
+            //     // do something here...
+            //   // alert(dataArr);
+            //
+            // });
+            $(itemSet).each(function(index, value) {
+                console.log('itemSet');
+        if (value.items == item) {
+          alert('ELAAAA');
+          console.log('itemSgfdgdfgdet');
+        }
+      });
+
+        </script>
+
+
+
+
+
+
+         <div data-role = "header" data-theme="b">
+            <a href="index.html" data-icon="delete">Cancel</a>
+	        <h1>Profile</h1>
+	        <a href="index.html" data-icon="check">Save</a>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-3">
+                       <div class="thumbnail">
+                             <img src="http://lorempixel.com/400/300/sports/1/" alt="...">
+                             <div class="caption">
+                                 <h2 style="text-align:center">Harry Potter</h2>
+                                 <h4 style="text-align:center">J.K Rowling</h3>
+                                </div>
+                       </div>
+                       <div> <p>Sfkvbfvnsfsk kjfvs kvsfkf ks sf  fvhsnfl k</p></div>
+                 </div>
+           </div>
+         </div>
+
+         <div data-role = "footer">
+            <div data-role="navbar" data-iconpos="bottom">
+		          <ul>
+			         <li><a href="trendings.html" data-icon="trendingIcon">Trending</a></li>
+			         <li><a href="home.html" data-icon="homeIcon">Home</a></li>
+			         <li><a href="map.html" data-icon="mapIcon" class="ui-btn-active ui-state-persist">Map</a></li>
+                    <li><a href="events.html" data-icon="eventsIcon">Events</a></li>
+		          </ul>
+	</div><!-- /navbar -->
+         </div>
+      </div>
+   </body>
+</html>

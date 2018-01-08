@@ -116,8 +116,12 @@ div.element {
     content: none !important;
 }
 
-.ui-btn-icon-bottom:after{
+.ui-btn-icon-bottom:after {
     display: none !important;
+}
+
+.ui-bar-b{
+    border:none !important;
 }
 
 
@@ -129,6 +133,7 @@ div.element {
 *
 *
     Header Styles
+*
 *
 */
 
@@ -220,13 +225,16 @@ div.element {
 }
 
 .trending_body .trending_list ul li{
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid #514a9d;
     border-radius: 0;
     border-top: none;
     border-left: none;
     border-right: none;
 }
 
+.trending_list ul li a{
+    border: none !important;
+}
 .trending_list ul li .trending_list_img img{
     width: 50px !important;
     height: 50px;
@@ -313,4 +321,34 @@ div.element {
 
 .menu_current p{
     color: #fff !important;
+}
+
+/*
+*
+*
+    Header Styles
+*
+*
+*/
+
+.hdr_crsl .element{
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.hdr_crsl .element img{
+    width: 40px;
+    margin: -2px -3px;
+}
+
+div.txt {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    cursor: move;
+    width: 62.59px;
+    font-size: 0.8em;
+    transition: 0.5s;
+    text-align: center;
+    overflow: hidden;
+    text-shadow: none;
 }

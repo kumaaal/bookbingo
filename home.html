@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       <link rel = "stylesheet" href = "style.css">
+       <script>
+        $( "#mypanel" ).trigger( "updatelayout" );
+       </script>
+      
+   </head>
+    
+
+   
+      
+   <body>
+       
+      <div data-role = "page" id = "pageone">
+          <div data-role="panel" data-display="overlay" id="mypanel">
+              <!-- panel content goes here -->
+              <div id="profile_image">
+                <img alt="" src="images/profile_pic.jpg" style="width: 200px; height: 200px; border-radius: 50%">
+              </div>
+              <div class="sliderList">
+                  
+                <ul data-role="listview">
+                    <li><a href="#">Leaderboard</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                </ul>
+              </div>
+          </div><!-- /panel -->
+         
+         <div data-role = "header" data-theme="b">
+             
+            <a href="#mypanel" data-icon="bars"></a>
+   
+	        <h1>Home</h1>
+	        <a href="index.html" data-icon="check">Save</a>
+             <hr/>
+             <div id="list">
+                    <div class="wrapper">
+                        <div class="element">1</div>
+                        <div class="element">2</div>
+                        <div class="element">3</div>
+                        <div class="element">4</div>
+                        <div class="element">5</div>
+                    </div>
+  
+                </div>
+             
+             
+         </div>
+          <div class="listCont">
+          <div data-role = "main" class = "ui-content">
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#">
+            	       <img src="../_assets/img/apple.png" class="ui-li-thumb">
+            	       <h2>iOS 6.1</h2>
+                        <p>Apple released iOS 6.1</p>
+                        <p class="ui-li-aside">iOS</p>
+                    </a></li>
+                    <li><a href="#">
+            	       <img src="../_assets/img/apple.png" class="ui-li-thumb">
+            	       <h2>iOS 6.1</h2>
+                        <p>Apple released iOS 6.1</p>
+                        <p class="ui-li-aside">iOS</p>
+                    </a></li>
+                    <li><a href="#">
+            	       <img src="../_assets/img/apple.png" class="ui-li-thumb">
+            	       <h2>iOS 6.1</h2>
+                        <p>Apple released iOS 6.1</p>
+                        <p class="ui-li-aside">iOS</p>
+                    </a></li>
+                    <li><a href="#">
+            	       <img src="../_assets/img/apple.png" class="ui-li-thumb">
+            	       <h2>iOS 6.1</h2>
+                        <p>Apple released iOS 6.1</p>
+                        <p class="ui-li-aside">iOS</p>
+                    </a></li>
+                    <li><a href="#">
+            	       <img src="../_assets/img/apple.png" class="ui-li-thumb">
+            	       <h2>iOS 6.1</h2>
+                        <p>Apple released iOS 6.1</p>
+                        <p class="ui-li-aside">iOS</p>
+                    </a></li>
+                    <li><a href="#">
+            	       <img src="../_assets/img/apple.png" class="ui-li-thumb">
+            	       <h2>iOS 6.1</h2>
+                        <p>Apple released iOS 6.1</p>
+                        <p class="ui-li-aside">iOS</p>
+                    </a></li>
+                    <li><a href="#">
+            	       <img src="../_assets/img/apple.png" class="ui-li-thumb">
+            	       <h2>iOS 6.1</h2>
+                        <p>Apple released iOS 6.1</p>
+                        <p class="ui-li-aside">iOS</p>
+                    </a></li>
+                </ul>
+          </div>
+              </div>
+
+         
+
+         <div data-role = "footer">
+            <div data-role="navbar" data-iconpos="bottom">
+		          <ul>
+			         <li><a href="trendings.html" data-icon="trendingIcon">Trending</a></li>
+			         <li><a href="home.html" data-icon="homeIcon" class="ui-btn-active ui-state-persist">Home</a></li>
+			         <li><a href="map.html" data-icon="mapIcon">Map</a></li>
+                      <li><a href="events.html" data-icon="eventsIcon">Events</a></li>
+		          </ul>
+	</div><!-- /navbar -->
+         </div>
+      </div>
+   </body>
+</html>

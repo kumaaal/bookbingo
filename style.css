@@ -1,0 +1,218 @@
+
+#pageone .ui-header {
+    background: #5069A0;
+}
+           
+           
+           [data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;} 
+           
+           .listCont {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: 500px;
+           }
+
+#pageone .ui-header {
+    background: #00aeef;
+}
+           [data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;} 
+           
+           .ui-icon-trendingIcon
+{
+    background: url('images/trending.png') no-repeat rgba(0, 0, 0, 0.4) 2% !important;
+    background-size:4px 4px;
+}
+                      .ui-icon-homeIcon
+{
+    background: url('images/trending.png') no-repeat rgba(0, 0, 0, 0.4) 2% !important;
+    background-size:4px 4px;
+}
+                      .ui-icon-mapIcon
+{
+    background: url('images/trending.png') no-repeat rgba(0, 0, 0, 0.4) 2% !important;
+    background-size:4px 4px;
+}
+                      .ui-icon-eventsIcon
+{
+    background: url('images/trending.png') no-repeat rgba(0, 0, 0, 0.4) 2% !important;
+    background-size:4px 4px;
+}
+           div#list {
+  overflow: scroll;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  white-space: nowrap;
+  background: #00aeef;   
+}
+div.wrapper {
+  overflow: visible;
+  text-align: left;
+    
+}
+div.element {
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  padding: 1em;
+  background: #FFFFFF;
+  border: 1px solid #79A777;
+  color: #FFFFFF;
+  text-shadow: 0 1px 1px #000;
+  cursor: move;
+  width: 60px;
+  height: 60px;
+  font-size: 0.8em;
+  transition: 0.5s;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 50%;
+	
+}
+           hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+           .listCont {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: 500px;
+}
+           .sliderList{
+             overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: 500px;  
+               
+           }
+           
+           .ui-icon-bars {
+    background-image: url('search.png');
+    width:24px;
+    height: 24px;
+}
+           .profile_image{
+               border-radius: 50px;
+               width: 300px;
+               height: 300px;
+               margin-left: 50px;
+           }
+.ui-li-icon-right {
+    max-height: 40px;
+    max-width: 40px;
+    right: 10px;
+    top: .9em;
+}
+.favClass{
+        
+    float:left;
+}
+
+.ui-btn-icon-right:after{
+    content: none !important;
+}
+
+
+/*Custom style begins*/
+
+
+
+/*
+*
+*
+    Header Styles
+*
+*/
+
+
+.ui-header{
+    width: 100%;
+    float: left;
+    top: 0;
+    position: fixed;
+    z-index: 9999999;
+}
+
+.ui-footer{
+    bottom: 0;
+    position: fixed;
+}
+
+.book_bingo_header_top{
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    float:left;
+}
+
+.book_bingo_header_top a {
+    width: 20%;
+    float: left;
+}
+
+.book_bingo_header_top h1{
+    width: 60%;
+    float: left;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.book_bingo_search{
+    width: 94%;
+    float: left;
+    margin: 20px 3%;
+}
+
+.book_bingo_search div{
+    height: 40px;
+}
+
+.book_bingo_search input{
+    padding: 0 10px 0 50px;
+    height: 40px;
+    color: #777;
+}
+
+.ui-input-search:after {
+    left: 1.3125em !important;
+}
+
+.book_bingo_search div{
+    background-color: #fff !important;
+    border-color: #fff !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    box-shadow: initial;
+    border-radius: 0;
+}
+
+.ui-icon-delete:after {
+    background-image: url(images/mic.png);
+    background-color: #fff;
+}
+
+.ui-input-clear-hidden{
+    display: block !important;
+}
+
+/*Trending page Styles*/
+
+.trending_body{
+    top: 126px;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.trending_body .trending_list ul li{
+    border-bottom: 1px solid green;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}

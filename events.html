@@ -13,25 +13,48 @@
    <body>
       <div data-role = "page" id = "pageone">
          <div data-role = "header" data-theme="b">
-            <a href="index.html" data-icon="delete">Cancel</a>
-	        <h1>Events</h1>
-	        <a href="index.html" data-icon="check">Save</a>
+             <div class="book_bingo_header_top">
+                 <div class="mob-menu">
+                     <img src="images/menu.png">
+                 </div>
+
+                 <h1><img src="images/icon.png">Home</h1>
+                 <div class="mob-setting">
+                     <img src="images/more.png">
+                 </div>
+             </div>
          </div>
 
          <div data-role = "main" class = "ui-content">
             <h2>Content</h2>
          </div>
 
-         <div data-role = "footer">
-            <div data-role="navbar" data-iconpos="bottom">
-		          <ul>
-			         <li><a href="trendings.html" data-icon="trendingIcon">Trending</a></li>
-			         <li><a href="home.html" data-icon="homeIcon">Home</a></li>
-			         <li><a href="map.html" data-icon="mapIcon">Map</a></li>
-                    <li><a href="events.html" data-icon="eventsIcon" class="ui-btn-active ui-state-persist">Events</a></li>
-		          </ul>
-	</div><!-- /navbar -->
-         </div>
+          <div data-role = "footer" class="book_bingo_foter">
+              <div data-role="navbar" data-iconpos="bottom" class="footer_inner">
+                  <ul>
+                      <li>
+                          <a href="trendings.html" data-icon="trendingIcon" class="bottom_menu_item">
+                              <img src="images/trending.png">
+                              <p>Trending</p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="home.html" data-icon="homeIcon" class="bottom_menu_item">
+                              <img src="images/home.png">
+                              <p>Home</p>
+                          </a>
+                      </li>
+                      <li><a href="map.html" data-icon="mapIcon" class="bottom_menu_item">
+                          <img src="images/map.png">
+                          <p>Map</p>
+                      </a></li>
+                      <li><a href="events.html" data-icon="eventsIcon" class="bottom_menu_item menu_current">
+                          <img src="images/events.png">
+                          <p>Events</p>
+                      </a></li>
+                  </ul>
+              </div><!-- /navbar -->
+          </div>
       </div>
    </body>
 </html>

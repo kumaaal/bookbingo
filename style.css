@@ -163,7 +163,7 @@ div.element {
 }
 
 .book_bingo_header_top h1{
-    width: 69%;
+    width: 68%;
     float: left;
     margin: 18px 0;
     text-align: center;
@@ -217,11 +217,24 @@ div.element {
 /*Trending page Styles*/
 
 .trending_body{
-    top: 143px;
+    top: 145px;
+    bottom: 43px;
     position: absolute;
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+.trending_body.map{
+    top: 64px;
+}
+
+.trending_body.map .trending_list ul{
+    margin-top: 0;
+}
+
+.trending_body_top{
+    top: 124px ;
 }
 
 .trending_body .trending_list ul li{
@@ -294,8 +307,8 @@ div.element {
 
 .mob-setting{
     width: 10%;
-    padding: 10px;
-    float: left;
+    padding: 10px 0;
+    float: right;
 }
 
 .mob-setting img{
@@ -316,11 +329,11 @@ div.element {
     font-size: 10px;
     text-shadow: none;
     margin: 2px 0 5px;
-    color: #7af0c4;
+    color: #fff;
 }
 
-.menu_current p{
-    color: #fff !important;
+.menu_current {
+    background: #059 !important;
 }
 
 /*
@@ -351,4 +364,236 @@ div.txt {
     text-align: center;
     overflow: hidden;
     text-shadow: none;
+}
+
+.event-cal p{
+    text-shadow: none;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    width: 80%;
+    float: left;
+    margin: 3px 0;
+}
+
+.event-cal img{
+    float: left;
+    width:10%;
+}
+
+
+
+.cal-date{
+    width: 10%;
+    float: left;
+    font-weight: 400;
+}
+
+.cal-desc{
+    width: 80%;
+    float: left;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.cal-arrrow{
+    width: 10%;
+    float: left;
+    margin-top: 7px;
+}
+
+.cal-arrrow img{
+    float: right;
+}
+
+.event_date_list ul li a div{
+    color: #00aeef;
+}
+
+.event_actv_cal_color div{
+    color: #5fe4b2 !important;
+}
+
+.event_actv_cal_color .cal-date{
+    margin-top: 7px;
+}
+
+.img-left{
+    transform:          rotate(180deg);
+    -ms-transform:      rotate(180deg);
+    -moz-transform:     rotate(180deg);
+    -webkit-transform:  rotate(180deg);
+    -o-transform:       rotate(180deg);
+}
+
+.map .favClass{
+    margin: 0;
+    text-align: right;
+    margin-top: 3px;
+}
+
+.map .trending_place{
+    border: 2px solid #00aeef;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.map .trending_place p{
+    color: #00aeef;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 3px;
+}
+
+.map .trending_list_desc{
+    width: 54%;
+    float: left;
+    margin-left: 4%;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.map ul li.ui-first-child::after {
+    height: 100%;
+    content: "Compleated";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    text-align: center;
+    line-height: 78px;
+    color: #5fe4b2;
+    text-shadow: none;
+    font-size: 20px;
+}
+
+.map ul li.to-cmplt::after {
+    height: 100%;
+    content: "Compleat the current task to unlock";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    text-align: center;
+    line-height: 78px;
+    color: #d4e45f;
+    text-shadow: none;
+    font-size: 20px;
+}
+
+.map-page-map{
+    height: 80%;
+}
+/*
+****
+********
+Mobile Landscape
+************/
+
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+    .ui-header{
+        width: 100%;
+        float: left;
+        top: 0;
+        position: fixed;
+        z-index: 9999999;
+    }
+
+    .ui-footer{
+        bottom: 0;
+        position: fixed !important;
+    }
+
+    .mob-menu img, .mob-setting img{
+        width: 50%;
+    }
+
+    .book_bingo_header_top h1{
+        width: 73%;
+    }
+
+    .hdr_crsl .element{
+        width: 30px !important;
+        height: 30px !important;
+        margin: 5px 23px 5px 0;
+    }
+
+    div.txt {
+        margin: 0 18px 5px 0;
+    }
+
+    .trending_body {
+        bottom: 43px;
+    }
+
+    .event-cal p{
+        width: 90%;
+    }
+
+    .event-cal img{
+        width: 5%;
+    }
+
+    .map-page-map{
+        width: 61%;
+        float: left;
+        height: 100%;
+    }
+
+    .map-page-map iframe{
+        height: 251px !important;
+    }
+
+    .trending_list ul li .trending_list_img img {
+        width: 35px !important;
+        height: 35px;
+        margin-top: 0;
+    }
+
+    .map .favClass p{
+        margin: .4em 0;
+    }
+
+    .map .trending_list_desc {
+        width: 52%;
+        font-size: 17px;
+    }
+
+    .map .trending_place {
+        width: 20px;
+        height: 20px;
+    }
+
+    .map .trending_place p {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    .map .trending_list{
+        float: left;
+        width: 39%;
+        height: 268px;
+    }
+
+    .map ul li.ui-first-child::after, .map ul li.to-cmplt::after {
+        line-height: 66px;
+        font-size: 15px;
+    }
+
+
 }

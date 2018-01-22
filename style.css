@@ -57,7 +57,7 @@ div.element {
   margin: 5px 5px 5px 0;
   padding: 1em;
   background: #FFFFFF;
-  border: 1px solid #79A777;
+  border: 1px solid #005499;
   color: #FFFFFF;
   text-shadow: 0 1px 1px #000;
   cursor: move;
@@ -214,6 +214,10 @@ div.element {
     display: block !important;
 }
 
+.home-catgry-crnt{
+    background: #005499 !important;
+    border: 1px solid #fff !important;
+}
 /*Trending page Styles*/
 
 .trending_body{
@@ -535,6 +539,10 @@ and (orientation: landscape) {
 
     div.txt {
         margin: 0 18px 5px 0;
+    }
+
+    .hdr_crsl .element img {
+        margin: -4px -6px;
     }
 
     .trending_body {

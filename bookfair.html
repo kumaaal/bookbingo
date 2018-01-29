@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+       <link rel = "stylesheet" href = "style.css">
+       <script>
+        $( "#mypanel" ).trigger( "updatelayout" );
+
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+
+       </script>
+
+   </head>
+
+
+
+
+   <body>
+
+      <div data-role = "page" id = "pageone">
+        <div data-role="panel" data-display="overlay" id="mypanel">
+                  <!-- panel content goes here -->
+                  <div id="profile_image">
+                    <img alt="" src="images/profile_pic.jpg" style="width: 200px; height: 200px; border-radius: 50%">
+                  </div>
+                  <div class="sliderList">
+
+                    <ul data-role="listview">
+                        <li><a href="#">Leaderboard</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Scan the Code</a></li>
+                        <li><a href="#">Complete Tasks</a></li>
+                        <li><a href="#">Contract Us</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                    </ul>
+                  </div>
+              </div><!-- /panel -->
+
+
+              <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Clients</a>
+                  <a href="#">Contact</a>
+                </div>
+
+
+         <div data-role = "header" data-theme="b">
+
+             <div class="book_bingo_header_top">
+                 <div class="mob-menu">
+                   <a href="#mypanel">
+                   <img src="images/menu.png">
+                 </a>
+                 </div>
+
+                 <h1><img src="images/icon.png">Contract Us</h1>
+                 <div class="mob-setting">
+                   <span onclick="openNav()">
+                     <img src="images/more.png">
+                     </span>
+                 </div>
+             </div>
+           </div>
+
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-3">
+                       <div class="thumbnail">
+                             <img src="http://lorempixel.com/400/300/sports/1/" alt="...">
+                             <div class="caption">
+                                 <h2 style="text-align:center">Colombo Book Fair</h2>
+                                 <h4 style="text-align:center"Sri Lanka</h3>
+                                </div>
+                       </div>
+                       <div> <p>It is held in annualy mid February at the Bandaranaika Memorial International Conference Hall in Colombo, Sri Lanka. This book fair is oraganizd by the Sri Lankan Book Publisher's Association. </p></div>
+                       <ul>
+                         <li>3rd February - 5th February 2018</li>
+                         <li>10.00 am - 9.00 pm</li>
+                         <li>BMICH - Colombo 07</li>
+                       </ul>
+
+                 </div>
+           </div>
+           </div>
+
+
+
+          <div data-role = "footer" class="book_bingo_foter">
+              <div data-role="navbar" data-iconpos="bottom" class="footer_inner">
+                  <ul>
+                      <li>
+                          <a href="trendings.html" data-icon="trendingIcon" class="bottom_menu_item">
+                              <img src="images/trending.png">
+                              <p>Trending</p>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="home.html" data-icon="homeIcon" class="bottom_menu_item menu_current">
+                              <img src="images/home.png">
+                              <p>Home</p>
+                          </a>
+                      </li>
+                      <li><a href="map.html" data-icon="mapIcon" class="bottom_menu_item">
+                          <img src="images/map.png">
+                          <p>Map</p>
+                      </a></li>
+                      <li><a href="events.html" data-icon="eventsIcon" class="bottom_menu_item">
+                          <img src="images/events.png">
+                          <p>Events</p>
+                      </a></li>
+                  </ul>
+              </div><!-- /navbar -->
+          </div>
+      </div>
+   </body>
+</html>

@@ -15,10 +15,10 @@ function statusChangeCallback(response) {
       console.log('connection status : already connected**');
       //document.getElementById('fb-btn').style.display = 'none';
         testAPI();
-      
+
     }else {
       // The person is not logged into your app or we are unable to tell.
-      
+
       //document.getElementById('fb-btn').style.display = 'block';
       //testAPI();
     }
@@ -32,7 +32,7 @@ function testAPI() {
         alert("Server Error**!");
       } else {
     //alert('Post ID: ' + response.id);
-    
+
       console.log("fine****");
       }
       imageUrl = "http://graph.facebook.com/" + response.id + "/picture?type=normal";
@@ -40,7 +40,7 @@ function testAPI() {
         console.log('Successful login for: ' + response.name);
         console.log('user id : '+response.id);
         //console.log(response.data);
-        
+
       //document.getElementById('status').innerHTML =
        // 'Thanks for logging in, ' + response.name + '!';
         //https://graph.facebook.com/{facebookId}/picture?type=small
@@ -50,11 +50,12 @@ function testAPI() {
           //console.log("original response**: "+imageUrl);
     return imageUrl;
     });
-    
+
   }
 FB.login(function(response){
   // Handle the response object, like in statusChangeCallback() in our demo
   // code.
+   statusChangeCallback(response)
 });
 
 FB.login(function(response) {
@@ -65,7 +66,7 @@ FB.login(function(response) {
   if (response.status === 'connected') {
     // Logged into your app and Facebook.
   } else {
-    // The person is not logged into this app or we are unable to tell. 
+    // The person is not logged into this app or we are unable to tell.
   }
 });
 

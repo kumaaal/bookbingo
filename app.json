@@ -1,0 +1,7 @@
+{
+  "name": "Bookbingo",
+  "description": "books...",
+  "repository": "https://github.com/kumaaal/bookbingo/",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["php", "express", "static"]
+}
